@@ -1,0 +1,347 @@
+﻿@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+.droid-arabic-kufi {
+  font-family: 'Droid Arabic Kufi', serif;
+}
+
+html {
+  overflow-y: scroll;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
+.nav__link::before {
+content: "";
+display : block;
+position: absolute;
+bottom:3px;
+left:0;
+height:3px;
+width:100%;
+background-color:#000000;
+transform-origin:right top;
+transform: scale(0,1);
+transform:color 0.1s,transform 0.2s ease-in;
+
+}
+
+.nav__link:hover::before,
+.nav__link:hover::before {
+
+transform-origin: left top;
+transform: scale(1,1);
+}
+
+.nav__link{
+color:inherit;
+text-decoration:none;
+margin-right:50px;
+position:relative;
+font-family:"Raleway", sans-serif;
+padding: 16px 0 ;
+margin: 0 12px;
+letter-spaccing:1px;
+line-height:16px;
+font-weight:700;
+transition:color 0.1s, background-color 0.1s, padding 0.2s ease-out;
+color:#fff;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: visible;
+  position: relative;
+  height: unset;
+  font-family: "Euclid Circular A", "Poppins";
+  color: #000000;
+  text-align: center;
+}
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.container {
+  width: 200%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  background: #ccf381;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.banner h2,
+.footer h2 {
+  margin: 20px 0;
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px 0 16px;
+  background: #317773;
+  box-shadow: 0 0 20px rgb(0 0 0 / 8%);
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+nav img {
+  width: 32px;
+  height: 32px;
+}
+
+
+
+
+html {
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: linear-gradient(#141e30, #243b55);
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+   display:none;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 80px;
+}
+
+h2 {
+  margin: 50px 0 20px;
+  font-size: 35px;
+    height: 10vh;
+    font-family:"Austin", serif;
+    font-size: 45px;
+  
+}
+h1 {
+  margin: 50px 0 20px;
+    display:flex;
+   justify-content: center;
+    font-size: 55px;
+    font-family: 'Droid Arabic Kufi', serif;
+}
+p {
+  opacity: 0.66;
+  font-size: 16px;
+}
+
+.banner {
+  flex-direction: row;
+  text-align: left;
+  gap: 30px;
+  background: #CCF381;
+}
+
+.footer {
+  background: #CCF381;
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+}
+
+.container .panel:nth-child(odd) {
+  background: #CCF381;
+}
