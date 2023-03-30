@@ -8,7 +8,8 @@ html {
   overflow-y: scroll;
   height: 100%;
   -webkit-overflow-scrolling: touch;
-overflow: scroll;}
+  overflow-scrolling: touch;
+}
 
 .nav__link::before {
 content: "";
@@ -40,13 +41,12 @@ position:relative;
 font-family:"Raleway", sans-serif;
 padding: 16px 0 ;
 margin: 0 12px;
+letter-spaccing:1px;
 line-height:16px;
-letter-spacing: 1px;
 font-weight:700;
 transition:color 0.1s, background-color 0.1s, padding 0.2s ease-out;
-color:#fff;
+color:#000000;
 }
-
 
 
 * {
@@ -97,7 +97,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 24px 0 16px;
-  background: #317773;
+  background: #fff;
   box-shadow: 0 0 20px rgb(0 0 0 / 8%);
 }
 
@@ -128,7 +128,7 @@ body {
 
 .login-box {
   position: absolute;
-  top: 530%;
+  top: 50%;
   left: 50%;
   width: 400px;
   padding: 40px;
@@ -177,7 +177,7 @@ body {
 .login-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
-  color: #03e9f4;
+  color: #fff;
   font-size: 12px;
 }
 
@@ -185,7 +185,7 @@ body {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #03e9f4;
+  color: #fff;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -308,6 +308,7 @@ section {
 h2 {
   margin: 50px 0 20px;
   font-size: 35px;
+  color:#000000;
     height: 10vh;
     font-family:"Austin", serif;
     font-size: 45px;
@@ -317,6 +318,7 @@ h1 {
   margin: 50px 0 20px;
     display:flex;
    justify-content: center;
+   color:#fff;
     font-size: 55px;
     font-family: 'Droid Arabic Kufi', serif;
 }
@@ -329,11 +331,11 @@ p {
   flex-direction: row;
   text-align: left;
   gap: 30px;
-  background: #CCF381;
+  background: #07588a;
 }
 
 .footer {
-  background: #CCF381;
+  background: #e1f6f4;
 }
 
 .panel {
@@ -342,5 +344,5 @@ p {
 }
 
 .container .panel:nth-child(odd) {
-  background: #CCF381;
+  background: #208DA9;
 }
