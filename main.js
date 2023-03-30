@@ -1,8 +1,9 @@
-const control = document.getElementById('login-box') // login 
-control.addEventListener('click', onclickfunction) ;
-function onclickfunction(x) {
+const control = document.getElementById('loginpage') // login 
+control.addEventListener('click', onclickfunction1) ;
+function onclickfunction1(x) {
+  console.log('ssssss')
 x.preventDefault ;
-document.querySelector('form').style.display= 'block'
+  document.getElementById('loginnnn').style.display= 'block'
 
 }
 gsap.registerPlugin(ScrollTrigger);
